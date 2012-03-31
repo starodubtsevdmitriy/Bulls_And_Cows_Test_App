@@ -1,0 +1,292 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA7C9ACC1524F45600F2FA80 /* TableViewDataContrroller.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7C9ACB1524F45600F2FA80 /* TableViewDataContrroller.m */; };
+		EA80E20F151FB54000F5A1C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA80E20E151FB54000F5A1C5 /* UIKit.framework */; };
+		EA80E211151FB54000F5A1C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA80E210151FB54000F5A1C5 /* Foundation.framework */; };
+		EA80E213151FB54000F5A1C5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA80E212151FB54000F5A1C5 /* CoreGraphics.framework */; };
+		EA80E219151FB54000F5A1C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA80E217151FB54000F5A1C5 /* InfoPlist.strings */; };
+		EA80E21B151FB54000F5A1C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA80E21A151FB54000F5A1C5 /* main.m */; };
+		EA80E21F151FB54000F5A1C5 /* BullsAndCowsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA80E21E151FB54000F5A1C5 /* BullsAndCowsAppDelegate.m */; };
+		EA80E222151FB54000F5A1C5 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA80E220151FB54000F5A1C5 /* MainStoryboard.storyboard */; };
+		EA80E225151FB54000F5A1C5 /* BullsAndCowsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA80E224151FB54000F5A1C5 /* BullsAndCowsViewController.m */; };
+		EAFC5262152311620018D071 /* BullsAndCowsDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAFC5261152311620018D071 /* BullsAndCowsDataController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EA7C9ACA1524F45600F2FA80 /* TableViewDataContrroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewDataContrroller.h; sourceTree = "<group>"; };
+		EA7C9ACB1524F45600F2FA80 /* TableViewDataContrroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewDataContrroller.m; sourceTree = "<group>"; };
+		EA80E20A151FB54000F5A1C5 /* BullsAndCowsTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullsAndCowsTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA80E20E151FB54000F5A1C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EA80E210151FB54000F5A1C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EA80E212151FB54000F5A1C5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EA80E216151FB54000F5A1C5 /* BullsAndCowsTestApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BullsAndCowsTestApp-Info.plist"; sourceTree = "<group>"; };
+		EA80E218151FB54000F5A1C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA80E21A151FB54000F5A1C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA80E21C151FB54000F5A1C5 /* BullsAndCowsTestApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BullsAndCowsTestApp-Prefix.pch"; sourceTree = "<group>"; };
+		EA80E21D151FB54000F5A1C5 /* BullsAndCowsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BullsAndCowsAppDelegate.h; sourceTree = "<group>"; };
+		EA80E21E151FB54000F5A1C5 /* BullsAndCowsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BullsAndCowsAppDelegate.m; sourceTree = "<group>"; };
+		EA80E221151FB54000F5A1C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		EA80E223151FB54000F5A1C5 /* BullsAndCowsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BullsAndCowsViewController.h; sourceTree = "<group>"; };
+		EA80E224151FB54000F5A1C5 /* BullsAndCowsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BullsAndCowsViewController.m; sourceTree = "<group>"; };
+		EAFC5260152311620018D071 /* BullsAndCowsDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BullsAndCowsDataController.h; sourceTree = "<group>"; };
+		EAFC5261152311620018D071 /* BullsAndCowsDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BullsAndCowsDataController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA80E207151FB53F00F5A1C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA80E20F151FB54000F5A1C5 /* UIKit.framework in Frameworks */,
+				EA80E211151FB54000F5A1C5 /* Foundation.framework in Frameworks */,
+				EA80E213151FB54000F5A1C5 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA80E1FF151FB53F00F5A1C5 = {
+			isa = PBXGroup;
+			children = (
+				EA80E214151FB54000F5A1C5 /* BullsAndCowsTestApp */,
+				EA80E20D151FB54000F5A1C5 /* Frameworks */,
+				EA80E20B151FB54000F5A1C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA80E20B151FB54000F5A1C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA80E20A151FB54000F5A1C5 /* BullsAndCowsTestApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA80E20D151FB54000F5A1C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA80E20E151FB54000F5A1C5 /* UIKit.framework */,
+				EA80E210151FB54000F5A1C5 /* Foundation.framework */,
+				EA80E212151FB54000F5A1C5 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA80E214151FB54000F5A1C5 /* BullsAndCowsTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				EA80E21D151FB54000F5A1C5 /* BullsAndCowsAppDelegate.h */,
+				EA80E21E151FB54000F5A1C5 /* BullsAndCowsAppDelegate.m */,
+				EA7C9ACA1524F45600F2FA80 /* TableViewDataContrroller.h */,
+				EA7C9ACB1524F45600F2FA80 /* TableViewDataContrroller.m */,
+				EA80E220151FB54000F5A1C5 /* MainStoryboard.storyboard */,
+				EAFC5260152311620018D071 /* BullsAndCowsDataController.h */,
+				EAFC5261152311620018D071 /* BullsAndCowsDataController.m */,
+				EA80E223151FB54000F5A1C5 /* BullsAndCowsViewController.h */,
+				EA80E224151FB54000F5A1C5 /* BullsAndCowsViewController.m */,
+				EA80E215151FB54000F5A1C5 /* Supporting Files */,
+			);
+			path = BullsAndCowsTestApp;
+			sourceTree = "<group>";
+		};
+		EA80E215151FB54000F5A1C5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA80E216151FB54000F5A1C5 /* BullsAndCowsTestApp-Info.plist */,
+				EA80E217151FB54000F5A1C5 /* InfoPlist.strings */,
+				EA80E21A151FB54000F5A1C5 /* main.m */,
+				EA80E21C151FB54000F5A1C5 /* BullsAndCowsTestApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA80E209151FB53F00F5A1C5 /* BullsAndCowsTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA80E228151FB54000F5A1C5 /* Build configuration list for PBXNativeTarget "BullsAndCowsTestApp" */;
+			buildPhases = (
+				EA80E206151FB53F00F5A1C5 /* Sources */,
+				EA80E207151FB53F00F5A1C5 /* Frameworks */,
+				EA80E208151FB53F00F5A1C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BullsAndCowsTestApp;
+			productName = BullsAndCowsTestApp;
+			productReference = EA80E20A151FB54000F5A1C5 /* BullsAndCowsTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA80E201151FB53F00F5A1C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = EA80E204151FB53F00F5A1C5 /* Build configuration list for PBXProject "BullsAndCowsTestApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EA80E1FF151FB53F00F5A1C5;
+			productRefGroup = EA80E20B151FB54000F5A1C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA80E209151FB53F00F5A1C5 /* BullsAndCowsTestApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA80E208151FB53F00F5A1C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA80E219151FB54000F5A1C5 /* InfoPlist.strings in Resources */,
+				EA80E222151FB54000F5A1C5 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA80E206151FB53F00F5A1C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA80E21B151FB54000F5A1C5 /* main.m in Sources */,
+				EA80E21F151FB54000F5A1C5 /* BullsAndCowsAppDelegate.m in Sources */,
+				EA80E225151FB54000F5A1C5 /* BullsAndCowsViewController.m in Sources */,
+				EAFC5262152311620018D071 /* BullsAndCowsDataController.m in Sources */,
+				EA7C9ACC1524F45600F2FA80 /* TableViewDataContrroller.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EA80E217151FB54000F5A1C5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA80E218151FB54000F5A1C5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EA80E220151FB54000F5A1C5 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA80E221151FB54000F5A1C5 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA80E226151FB54000F5A1C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EA80E227151FB54000F5A1C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA80E229151FB54000F5A1C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BullsAndCowsTestApp/BullsAndCowsTestApp-Prefix.pch";
+				INFOPLIST_FILE = "BullsAndCowsTestApp/BullsAndCowsTestApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EA80E22A151FB54000F5A1C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BullsAndCowsTestApp/BullsAndCowsTestApp-Prefix.pch";
+				INFOPLIST_FILE = "BullsAndCowsTestApp/BullsAndCowsTestApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA80E204151FB53F00F5A1C5 /* Build configuration list for PBXProject "BullsAndCowsTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA80E226151FB54000F5A1C5 /* Debug */,
+				EA80E227151FB54000F5A1C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA80E228151FB54000F5A1C5 /* Build configuration list for PBXNativeTarget "BullsAndCowsTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA80E229151FB54000F5A1C5 /* Debug */,
+				EA80E22A151FB54000F5A1C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA80E201151FB53F00F5A1C5 /* Project object */;
+}
