@@ -83,7 +83,7 @@
             if (_countOfAttempt == 0 && self.userAlredyWinGame == NO) {
                 self.dataController.randomArray = [BullsAndCowsDataController randomNumberGenerate];                      // Add random array
                 self.dataController.userNumberArray = [BullsAndCowsDataController fromStringToArray:self.userNumber.text];// Add user array
-                self.userAlredyWinGame = [BullsAndCowsDataController userNumber:self.dataController.userNumberArray isEqualToRandomNumber:self.dataController.randomArray];                                       //alredy win check
+                self.userAlredyWinGame = [BullsAndCowsDataController userNumber:self.dataController.userNumberArray isEqualToRandomNumber:self.dataController.randomArray];//alredy win check
                 if (self.userAlredyWinGame == YES) {
                     UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"!YOU WIN!"
                                                                         message:@"Congratulations!\n You guessed the number!" delegate:self 
@@ -97,7 +97,7 @@
                     _countOfBulls = [NSString stringWithFormat:@"Bulss: %d ",[BullsAndCowsDataController bullsCounter:self.dataController.userNumberArray inArrays:self.dataController.randomArray]];
                     _countOfCows = [NSString stringWithFormat:@"Cows: %d ",[BullsAndCowsDataController cowsCounter:self.dataController.userNumberArray inArrays:self.dataController.randomArray]];
                     NSString *tempString = [BullsAndCowsDataController formationOfTheStringsFromCowsCounter:_countOfCows bullsCounter:_countOfBulls userNumber:self.userNumber.text numberOfAttempt:_countOfAttempt];
-                    self.navigationItem.title = self.userNumber.text;
+                    self.navigationItem.title = [BullsAndCowsDataController fromArrayToString:self.dataController.randomArray];
                     [self.dataController addDataToTableArray:tempString];
                     _countOfAttempt += 1;
                 }
@@ -121,7 +121,6 @@
                     _countOfCows = [NSString stringWithFormat:@"Cows: %d",[BullsAndCowsDataController cowsCounter:self.dataController.userNumberArray inArrays:self.dataController.randomArray]];
                     NSString *tempString = [BullsAndCowsDataController formationOfTheStringsFromCowsCounter:_countOfCows bullsCounter:_countOfBulls userNumber:self.userNumber.text numberOfAttempt:_countOfAttempt];
                     [self.dataController addDataToTableArray:tempString];
-                     self.navigationItem.title = self.userNumber.text;
                     _countOfAttempt += 1;                   
                 }
             }
