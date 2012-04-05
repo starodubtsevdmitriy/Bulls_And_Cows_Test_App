@@ -45,7 +45,7 @@ isEqualToRandomNumber:(NSMutableArray *) randomArray {
 }
 
 + (int) cowsCounter:(NSMutableArray *) userArray 
-          inArrays:(NSMutableArray *) randomArray {
+           inArrays:(NSMutableArray *) randomArray {
     int cowsCounter = 0;
     for (int position = 0; position <= 3; position ++) {
         if ([randomArray containsObject:[userArray objectAtIndex:position]] && [[userArray objectAtIndex:position] isEqual:[randomArray objectAtIndex:position]] == NO) {

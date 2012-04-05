@@ -11,18 +11,16 @@
 @interface BullsAndCowsViewController()
 
 @property (nonatomic) BOOL userAlredyWinGame;
-@property (nonatomic) BOOL buttonGoAlredyPressedOneTime;
 
 @end
 
 @implementation BullsAndCowsViewController
 @synthesize userNumber =_userNumber;
 @synthesize dataController = _dataController;
-@synthesize countOfBulls;
-@synthesize countOfCows;
+@synthesize countOfBulls = _countOfBulls;
+@synthesize countOfCows = _countOfCows;
 @synthesize userAlredyWinGame = _userAlredyWinGame;
-@synthesize buttonGoAlredyPressedOneTime = _buttonGoAlredyPressedOneTime;
-@synthesize countOfAttempt;
+@synthesize countOfAttempt = _countOfAttempt;
 @synthesize navigationBar = _navigationBar;
 
 - (void)didReceiveMemoryWarning
@@ -54,8 +52,7 @@
     self.dataController = [[BullsAndCowsDataController alloc] init];
     [self.userNumber setDelegate:self];
     self.userAlredyWinGame = NO;
-    self.buttonGoAlredyPressedOneTime = NO;
-    countOfAttempt = 0;
+    _countOfAttempt = 0;
     _navigationBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0.0f, 48.0f, 320.0f, 480.0f - 48.0f)];
     [self.navigationBar setBarStyle: 0];
     [self.navigationBar setDelegate: self];
@@ -63,7 +60,7 @@
 }
 
 - (IBAction)buttonGoPressed:(id)sender {
-    NSCharacterSet *alphaSet = [NSCharacterSet decimalDigitCharacterSet]; //check for leters contain
+    NSCharacterSet *alphaSet = [NSCharacterSet decimalDigitCharacterSet];                   // Check user text for leters contain
     BOOL valid = [[self.userNumber.text stringByTrimmingCharactersInSet:alphaSet] isEqualToString:@""];
     if (self.userNumber.text.length == 4) {
         if (valid == NO) {
@@ -74,7 +71,7 @@
             [alertView release];
 
         }
-        else if ([[self class] stringContainsSameCharacters:self.userNumber.text] == YES ) {//check for seme numbers contain
+        else if ([[self class] stringContainsSameCharacters:self.userNumber.text] == YES ) { // Check user text for seme numbers contain
             UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"Error!!"
                                                                 message:@"String contains same characters" delegate:self 
                                                       cancelButtonTitle:@"OK" otherButtonTitles:nil];
@@ -82,11 +79,10 @@
             [alertView release];
             
         }
-        else {                                                                           //all check are ok!!!
-            if (countOfAttempt == 0 && self.userAlredyWinGame == NO) {
-                self.dataController.randomArray = [BullsAndCowsDataController randomNumberGenerate];                    //add random array
-                self.dataController.userNumberArray = [BullsAndCowsDataController fromStringToArray:self.userNumber.text];//add user array
-                self.buttonGoAlredyPressedOneTime = YES;
+        else {                                                                               // All check are ok!!!
+            if (_countOfAttempt == 0 && self.userAlredyWinGame == NO) {
+                self.dataController.randomArray = [BullsAndCowsDataController randomNumberGenerate];                      // Add random array
+                self.dataController.userNumberArray = [BullsAndCowsDataController fromStringToArray:self.userNumber.text];// Add user array
                 self.userAlredyWinGame = [BullsAndCowsDataController userNumber:self.dataController.userNumberArray isEqualToRandomNumber:self.dataController.randomArray];                                       //alredy win check
                 if (self.userAlredyWinGame == YES) {
                     UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"!YOU WIN!"
@@ -98,36 +94,35 @@
                     self.navigationItem.title = @"Bulls And Cows";
                 }
                 else {
-                    countOfBulls = [NSString stringWithFormat:@"Bulss: %d ",[BullsAndCowsDataController bullsCounter:self.dataController.userNumberArray inArrays:self.dataController.randomArray]];
-                    countOfCows = [NSString stringWithFormat:@"Cows: %d ",[BullsAndCowsDataController cowsCounter:self.dataController.userNumberArray inArrays:self.dataController.randomArray]];
-                    NSString *tempString = [BullsAndCowsDataController formationOfTheStringsFromCowsCounter:countOfCows bullsCounter:countOfBulls userNumber:self.userNumber.text numberOfAttempt:countOfAttempt];
+                    _countOfBulls = [NSString stringWithFormat:@"Bulss: %d ",[BullsAndCowsDataController bullsCounter:self.dataController.userNumberArray inArrays:self.dataController.randomArray]];
+                    _countOfCows = [NSString stringWithFormat:@"Cows: %d ",[BullsAndCowsDataController cowsCounter:self.dataController.userNumberArray inArrays:self.dataController.randomArray]];
+                    NSString *tempString = [BullsAndCowsDataController formationOfTheStringsFromCowsCounter:_countOfCows bullsCounter:_countOfBulls userNumber:self.userNumber.text numberOfAttempt:_countOfAttempt];
                     self.navigationItem.title = self.userNumber.text;
                     [self.dataController addDataToTableArray:tempString];
-                    countOfAttempt += 1;
+                    _countOfAttempt += 1;
                 }
             }
-            else if (countOfAttempt > 0 && self.userAlredyWinGame == NO) {//All except the first attempt
-                self.dataController.userNumberArray = [BullsAndCowsDataController fromStringToArray:self.userNumber.text];//add user array
-                self.userAlredyWinGame = [BullsAndCowsDataController userNumber:self.dataController.userNumberArray isEqualToRandomNumber:self.dataController.randomArray];//alredy win check
+            else if (_countOfAttempt > 0 && self.userAlredyWinGame == NO) {                                                // All except the first attempt
+                self.dataController.userNumberArray = [BullsAndCowsDataController fromStringToArray:self.userNumber.text]; // Add user array
+                self.userAlredyWinGame = [BullsAndCowsDataController userNumber:self.dataController.userNumberArray isEqualToRandomNumber:self.dataController.randomArray]; // User alredy win check
                 if (self.userAlredyWinGame == YES) {
                     UIAlertView* alertView = [[UIAlertView alloc] initWithTitle:@"!YOU WIN!"
                                                                         message:@"Congratulations!\n You guessed the number!" delegate:self 
                                                               cancelButtonTitle:@"OK" otherButtonTitles:nil];
                     [alertView show];
                     [alertView release];
-                    countOfAttempt = 0;
+                    _countOfAttempt = 0;
                     self.navigationItem.title = @"Bulls And Cows";
                     self.userAlredyWinGame = NO;
                     [self.dataController removeAllObjectFromStatisticTable];
                 }
                 else {
-                    countOfBulls = [NSString stringWithFormat:@"Bulss: %d ",[BullsAndCowsDataController bullsCounter:self.dataController.userNumberArray inArrays:self.dataController.randomArray]];
-                    countOfCows = [NSString stringWithFormat:@"Cows: %d",[BullsAndCowsDataController cowsCounter:self.dataController.userNumberArray inArrays:self.dataController.randomArray]];
-                    NSString *tempString = [BullsAndCowsDataController formationOfTheStringsFromCowsCounter:countOfCows bullsCounter:countOfBulls userNumber:self.userNumber.text numberOfAttempt:countOfAttempt];
+                    _countOfBulls = [NSString stringWithFormat:@"Bulss: %d ",[BullsAndCowsDataController bullsCounter:self.dataController.userNumberArray inArrays:self.dataController.randomArray]];
+                    _countOfCows = [NSString stringWithFormat:@"Cows: %d",[BullsAndCowsDataController cowsCounter:self.dataController.userNumberArray inArrays:self.dataController.randomArray]];
+                    NSString *tempString = [BullsAndCowsDataController formationOfTheStringsFromCowsCounter:_countOfCows bullsCounter:_countOfBulls userNumber:self.userNumber.text numberOfAttempt:_countOfAttempt];
                     [self.dataController addDataToTableArray:tempString];
                      self.navigationItem.title = self.userNumber.text;
-                    countOfAttempt += 1;                   
-                    //[self.dataController.userNumberArray removeLastObject];
+                    _countOfAttempt += 1;                   
                 }
             }
             self.userNumber.text = @"";
@@ -178,23 +173,23 @@
 return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 
 }
-
+   // Setting allowable values ​​text edit field 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     
     NSCharacterSet *nonNumberSet = [[NSCharacterSet characterSetWithCharactersInString:@"0123456789"] invertedSet];
     
-    // allow backspace
+    // Allow backspace
     if (range.length > 0 && [string length] == 0) {
         return YES;
     }
     
-    // do not allow . at the beggining
+    // Do not allow . at the beggining
     if (range.location == 0 && [string isEqualToString:@"."]) {
         return NO;
     }
     
     if ([textField.text length] + [string length] - range.length <= 4) {
-        // set the text field value manually
+    // Set the text field value manually
         NSString *newValue = [[textField text] stringByReplacingCharactersInRange:range withString:string];
         newValue = [[newValue componentsSeparatedByCharactersInSet:nonNumberSet] componentsJoinedByString:@""];
         textField.text = newValue;
@@ -214,7 +209,7 @@ return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return countOfAttempt;
+    return _countOfAttempt;
 }
 
 // Customize the appearance of table view cells.
