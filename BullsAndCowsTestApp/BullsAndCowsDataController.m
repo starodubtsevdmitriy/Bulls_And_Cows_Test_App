@@ -10,27 +10,25 @@
 
 @implementation BullsAndCowsDataController
 
-@synthesize userNumberArray;
-@synthesize rarandomArray;
-@synthesize tableArray;
+@synthesize userNumberArray = _userNumberArray;
+@synthesize randomArray = _randomArray;
+@synthesize tableArray = _tableArray;
 
 - (id)init {
     if (self = [super init]){
-        NSMutableArray *localuserNumberArray = [[NSMutableArray alloc] init]; //Instantiate userNumberArray
-        self.userNumberArray = localuserNumberArray;
-        NSMutableArray *localRandomArray = [[NSMutableArray alloc] init]; //Instantiate randomArray
-        self.rarandomArray = localRandomArray;
-        NSMutableArray *localTableArray = [[NSMutableArray alloc]init];//Instantiate tableArray
-        self.tableArray = localTableArray;
+        _userNumberArray = [[NSMutableArray alloc] init]; 
+        _randomArray = [[NSMutableArray alloc] init];
+        _tableArray = [[NSMutableArray alloc] init];
     }
     return self;
 }
 
 + (NSString *) formationOfTheStringsFromCowsCounter:(NSString *) cowsCounter 
-                                       bullsCounter:(NSString *) bullsCounter 
+                                       bullsCounter:(NSString *) bullsCounter
+                                         userNumber:(NSString *) userNumber
                                     numberOfAttempt:(int) numberOfAttempt {
     NSString *tempString1 = [bullsCounter stringByAppendingString:cowsCounter];
-    NSString *tempString2 = [NSString stringWithFormat:@"Attempt:%hu", numberOfAttempt];
+    NSString *tempString2 = [[NSString stringWithFormat:@"Attempt %hu: ", numberOfAttempt + 1] stringByAppendingString:[userNumber stringByAppendingString:@" "]];
     NSString *tempString3 = [tempString2 stringByAppendingString:tempString1];
     
     return tempString3;
@@ -68,7 +66,6 @@ isEqualToRandomNumber:(NSMutableArray *) randomArray {
     return bullsCounter;
 }
 
-
 + (NSMutableArray *) randomNumberGenerate {
     NSMutableArray *randomArray = [[NSMutableArray alloc]init ];
     for (int position = 0; position <= 3; position++) {
@@ -82,20 +79,32 @@ isEqualToRandomNumber:(NSMutableArray *) randomArray {
         }
         else {
             position = position - 1;
-        }
+        }	
     }
     return randomArray;
 }
 
+- (void)removeAllObjectFromStatisticTable {
+    [self.tableArray removeAllObjects];
+}
+
+- (id)objectInListAtIndex:(unsigned)theIndex {
+    return [self.tableArray objectAtIndex:theIndex];
+}
+
 - (void) addDataToTableArray:(NSString *) data {
-    self.tableArray = [[NSMutableArray alloc]initWithCapacity:100];
-    [tableArray addObject:data];
+    if ([self.tableArray count] == 0) {
+        [self.tableArray addObject:data];
+    }
+    else {
+        [self.tableArray insertObject:data atIndex: 0];
+    }
 }
 
 + (NSString *) fromArrayToString:(NSMutableArray*) array {
-    NSString * result = [[NSString alloc]init];
-    result = [[array valueForKey:@"description"] componentsJoinedByString:@""];
-    return result;
+    NSString * string = [[NSString alloc]init];
+    string = [[array valueForKey:@"description"] componentsJoinedByString:@""];
+    return string;
 }
             
 + (NSMutableArray *) fromStringToArray:(NSString *) string {
@@ -104,7 +113,6 @@ isEqualToRandomNumber:(NSMutableArray *) randomArray {
         NSString *element = [string substringWithRange:NSMakeRange(position, 1)];
         [array addObject:element];
     }
-    
     return array;
 }
 

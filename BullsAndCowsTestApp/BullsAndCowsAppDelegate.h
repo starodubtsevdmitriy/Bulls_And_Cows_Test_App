@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "BullsAndCowsViewController.h"
+#import "BullsAndCowsDataController.h"
 
 @class BullsAndCowsViewController;
 

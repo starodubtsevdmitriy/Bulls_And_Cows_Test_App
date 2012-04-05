@@ -8,13 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BullsAndCowsDataController : NSObject {
-    NSMutableArray *userNumberArray;
-    NSMutableArray *randomArray;
-    NSMutableArray *tableArray;
-}
+@interface BullsAndCowsDataController : NSObject 
 
+- (void) removeAllObjectFromStatisticTable;
 - (void) addDataToTableArray:(NSString *) data;
+- (id)objectInListAtIndex:(unsigned)theIndex;
 + (NSArray *) randomNumberGenerate;
 + (NSString *) fromArrayToString:(int*) array;
 + (NSArray *) fromStringToArray:(NSString *) string;
@@ -25,11 +23,12 @@ isEqualToRandomNumber:(NSMutableArray *) randomArray;
 + (int) bullsCounter:(NSMutableArray *) userArray 
             inArrays:(NSMutableArray *) randomArray;
 + (NSString *) formationOfTheStringsFromCowsCounter:(NSString *) cowsCounter 
-                                       bullsCounter:(NSString *) bullsCounter 
+                                       bullsCounter:(NSString *) bullsCounter
+                                         userNumber:(NSString *) userNumber
                                     numberOfAttempt:(int) numberOfAttempt;
 
 @property (nonatomic, copy, readwrite) NSMutableArray *userNumberArray;
-@property (nonatomic, copy, readwrite) NSMutableArray *rarandomArray;
+@property (nonatomic, copy, readwrite) NSMutableArray *randomArray;
 @property (nonatomic, copy, readwrite) NSMutableArray *tableArray;
 
 @end

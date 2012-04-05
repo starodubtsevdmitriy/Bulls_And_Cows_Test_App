@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EA7C9ACC1524F45600F2FA80 /* TableViewDataContrroller.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7C9ACB1524F45600F2FA80 /* TableViewDataContrroller.m */; };
 		EA80E20F151FB54000F5A1C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA80E20E151FB54000F5A1C5 /* UIKit.framework */; };
 		EA80E211151FB54000F5A1C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA80E210151FB54000F5A1C5 /* Foundation.framework */; };
 		EA80E213151FB54000F5A1C5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA80E212151FB54000F5A1C5 /* CoreGraphics.framework */; };
@@ -20,8 +19,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EA7C9ACA1524F45600F2FA80 /* TableViewDataContrroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewDataContrroller.h; sourceTree = "<group>"; };
-		EA7C9ACB1524F45600F2FA80 /* TableViewDataContrroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewDataContrroller.m; sourceTree = "<group>"; };
 		EA80E20A151FB54000F5A1C5 /* BullsAndCowsTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullsAndCowsTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA80E20E151FB54000F5A1C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EA80E210151FB54000F5A1C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -85,8 +82,6 @@
 			children = (
 				EA80E21D151FB54000F5A1C5 /* BullsAndCowsAppDelegate.h */,
 				EA80E21E151FB54000F5A1C5 /* BullsAndCowsAppDelegate.m */,
-				EA7C9ACA1524F45600F2FA80 /* TableViewDataContrroller.h */,
-				EA7C9ACB1524F45600F2FA80 /* TableViewDataContrroller.m */,
 				EA80E220151FB54000F5A1C5 /* MainStoryboard.storyboard */,
 				EAFC5260152311620018D071 /* BullsAndCowsDataController.h */,
 				EAFC5261152311620018D071 /* BullsAndCowsDataController.m */,
@@ -174,7 +169,6 @@
 				EA80E21F151FB54000F5A1C5 /* BullsAndCowsAppDelegate.m in Sources */,
 				EA80E225151FB54000F5A1C5 /* BullsAndCowsViewController.m in Sources */,
 				EAFC5262152311620018D071 /* BullsAndCowsDataController.m in Sources */,
-				EA7C9ACC1524F45600F2FA80 /* TableViewDataContrroller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
