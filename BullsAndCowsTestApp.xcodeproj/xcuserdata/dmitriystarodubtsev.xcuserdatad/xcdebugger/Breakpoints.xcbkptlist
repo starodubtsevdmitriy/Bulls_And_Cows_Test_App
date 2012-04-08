@@ -9,11 +9,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "BullsAndCowsTestApp/BullsAndCowsDataController.m"
-         timestampString = "355003493.692581"
+         timestampString = "355591215.593981"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "73"
-         endingLineNumber = "73"
+         startingLineNumber = "93"
+         endingLineNumber = "93"
          landmarkName = "+randomNumberGenerate"
          landmarkType = "5">
       </FileBreakpoint>
@@ -23,11 +23,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "BullsAndCowsTestApp/BullsAndCowsDataController.m"
-         timestampString = "355003493.692581"
+         timestampString = "355591215.593981"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "78"
-         endingLineNumber = "78"
+         startingLineNumber = "98"
+         endingLineNumber = "98"
          landmarkName = "+randomNumberGenerate"
          landmarkType = "5">
       </FileBreakpoint>
@@ -37,11 +37,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "BullsAndCowsTestApp/BullsAndCowsDataController.m"
-         timestampString = "355003493.692581"
+         timestampString = "355591215.593981"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "69"
-         endingLineNumber = "69"
+         startingLineNumber = "89"
+         endingLineNumber = "89"
          landmarkName = "+randomNumberGenerate"
          landmarkType = "5">
       </FileBreakpoint>
@@ -51,11 +51,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "BullsAndCowsTestApp/BullsAndCowsDataController.m"
-         timestampString = "355003493.692581"
+         timestampString = "355591215.593981"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "64"
-         endingLineNumber = "64"
+         startingLineNumber = "80"
+         endingLineNumber = "80"
          landmarkName = "+bullsCounter:inArrays:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -79,11 +79,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "BullsAndCowsTestApp/BullsAndCowsDataController.m"
-         timestampString = "355003493.692581"
+         timestampString = "355591215.593981"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "82"
-         endingLineNumber = "82"
+         startingLineNumber = "102"
+         endingLineNumber = "102"
          landmarkName = "+randomNumberGenerate"
          landmarkType = "5">
       </FileBreakpoint>
@@ -177,11 +177,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "BullsAndCowsTestApp/BullsAndCowsDataController.m"
-         timestampString = "355048413.319374"
+         timestampString = "355591215.593981"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "109"
-         endingLineNumber = "109"
+         startingLineNumber = "137"
+         endingLineNumber = "137"
          landmarkName = "@implementation BullsAndCowsDataController"
          landmarkType = "3">
       </FileBreakpoint>
@@ -191,11 +191,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "BullsAndCowsTestApp/BullsAndCowsDataController.m"
-         timestampString = "355048413.319374"
+         timestampString = "355591215.593981"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "105"
-         endingLineNumber = "105"
+         startingLineNumber = "133"
+         endingLineNumber = "133"
          landmarkName = "+fromArrayToString:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -233,11 +233,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "BullsAndCowsTestApp/BullsAndCowsDataController.m"
-         timestampString = "355003493.692581"
+         timestampString = "355591215.593981"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "83"
-         endingLineNumber = "83"
+         startingLineNumber = "103"
+         endingLineNumber = "103"
          landmarkName = "+randomNumberGenerate"
          landmarkType = "5">
       </FileBreakpoint>
@@ -247,11 +247,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "BullsAndCowsTestApp/BullsAndCowsDataController.m"
-         timestampString = "355003493.692581"
+         timestampString = "355591215.593981"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "52"
-         endingLineNumber = "52"
+         startingLineNumber = "64"
+         endingLineNumber = "64"
          landmarkName = "+cowsCounter:inArrays:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -289,11 +289,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "BullsAndCowsTestApp/BullsAndCowsDataController.m"
-         timestampString = "355003493.692581"
+         timestampString = "355591215.593981"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "41"
-         endingLineNumber = "41"
+         startingLineNumber = "49"
+         endingLineNumber = "49"
          landmarkName = "+userNumber:isEqualToRandomNumber:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -376,20 +376,6 @@
          timestampString = "355325946.490693"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "170"
-         endingLineNumber = "170"
-         landmarkName = "-shouldAutorotateToInterfaceOrientation:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         isPathRelative = "1"
-         filePath = "BullsAndCowsTestApp/BullsAndCowsViewController.m"
-         timestampString = "355325946.490693"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
          startingLineNumber = "177"
          endingLineNumber = "177"
          landmarkName = "-textField:shouldChangeCharactersInRange:replacementString:"
@@ -427,13 +413,13 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "BullsAndCowsTestApp/BullsAndCowsDataController.m"
-         timestampString = "354967364.104379"
+         timestampString = "355591215.593981"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "24"
-         endingLineNumber = "24"
-         landmarkName = "-init"
-         landmarkType = "5">
+         startingLineNumber = "26"
+         endingLineNumber = "26"
+         landmarkName = "@implementation BullsAndCowsDataController"
+         landmarkType = "3">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
@@ -483,62 +469,6 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "BullsAndCowsTestApp/BullsAndCowsViewController.m"
-         timestampString = "355325946.490693"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "150"
-         endingLineNumber = "150"
-         landmarkName = "-viewWillAppear:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         isPathRelative = "1"
-         filePath = "BullsAndCowsTestApp/BullsAndCowsViewController.m"
-         timestampString = "355325946.490693"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "155"
-         endingLineNumber = "155"
-         landmarkName = "-viewDidAppear:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         isPathRelative = "1"
-         filePath = "BullsAndCowsTestApp/BullsAndCowsViewController.m"
-         timestampString = "355325946.490693"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "159"
-         endingLineNumber = "159"
-         landmarkName = "-viewWillDisappear:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         isPathRelative = "1"
-         filePath = "BullsAndCowsTestApp/BullsAndCowsViewController.m"
-         timestampString = "355325946.490693"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "165"
-         endingLineNumber = "165"
-         landmarkName = "-viewDidDisappear:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         isPathRelative = "1"
-         filePath = "BullsAndCowsTestApp/BullsAndCowsViewController.m"
          timestampString = "355323043.403575"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
@@ -566,26 +496,12 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          isPathRelative = "1"
-         filePath = "BullsAndCowsTestApp/BullsAndCowsViewController.m"
-         timestampString = "355325946.490693"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "166"
-         endingLineNumber = "166"
-         landmarkName = "-viewDidDisappear:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         isPathRelative = "1"
          filePath = "BullsAndCowsTestApp/BullsAndCowsDataController.m"
-         timestampString = "354967364.104379"
+         timestampString = "355591215.593981"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "25"
-         endingLineNumber = "25"
+         startingLineNumber = "29"
+         endingLineNumber = "29"
          landmarkName = "@implementation BullsAndCowsDataController"
          landmarkType = "3">
       </FileBreakpoint>
@@ -665,7 +581,21 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "BullsAndCowsTestApp/BullsAndCowsDataController.m"
-         timestampString = "355003493.692581"
+         timestampString = "355591215.593981"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "35"
+         endingLineNumber = "35"
+         landmarkName = "+formationOfTheStringsFromCowsCounter:bullsCounter:userNumber:numberOfAttempt:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "BullsAndCowsTestApp/BullsAndCowsDataController.m"
+         timestampString = "355591215.593981"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "31"
@@ -679,25 +609,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "BullsAndCowsTestApp/BullsAndCowsDataController.m"
-         timestampString = "355003493.692581"
+         timestampString = "355591215.593981"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "27"
-         endingLineNumber = "27"
-         landmarkName = "+formationOfTheStringsFromCowsCounter:bullsCounter:userNumber:numberOfAttempt:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         isPathRelative = "1"
-         filePath = "BullsAndCowsTestApp/BullsAndCowsDataController.m"
-         timestampString = "355048413.319374"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "96"
-         endingLineNumber = "96"
+         startingLineNumber = "124"
+         endingLineNumber = "124"
          landmarkName = "-addDataToTableArray:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -721,11 +637,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "BullsAndCowsTestApp/BullsAndCowsDataController.m"
-         timestampString = "355048413.319374"
+         timestampString = "355591215.593981"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "100"
-         endingLineNumber = "100"
+         startingLineNumber = "128"
+         endingLineNumber = "128"
          landmarkName = "-addDataToTableArray:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -735,11 +651,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "BullsAndCowsTestApp/BullsAndCowsDataController.m"
-         timestampString = "355037336.728932"
+         timestampString = "355591215.593981"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "92"
-         endingLineNumber = "92"
+         startingLineNumber = "116"
+         endingLineNumber = "116"
          landmarkName = "-objectInListAtIndex:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -777,11 +693,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "BullsAndCowsTestApp/BullsAndCowsDataController.m"
-         timestampString = "355048413.319374"
+         timestampString = "355591215.593981"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "103"
-         endingLineNumber = "103"
+         startingLineNumber = "131"
+         endingLineNumber = "131"
          landmarkName = "@implementation BullsAndCowsDataController"
          landmarkType = "3">
       </FileBreakpoint>
@@ -791,11 +707,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "BullsAndCowsTestApp/BullsAndCowsDataController.m"
-         timestampString = "355036640.798408"
+         timestampString = "355591215.593981"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "89"
-         endingLineNumber = "89"
+         startingLineNumber = "113"
+         endingLineNumber = "113"
          landmarkName = "-removeAllObjectFromStatisticTable"
          landmarkType = "5">
       </FileBreakpoint>

@@ -23,6 +23,10 @@
     return self;
 }
 
+/*
+ * Form a line for a table of statistics
+ */
+
 + (NSString *) formationOfTheStringsFromCowsCounter:(NSString *) cowsCounter 
                                        bullsCounter:(NSString *) bullsCounter
                                          userNumber:(NSString *) userNumber
@@ -34,6 +38,10 @@
     return tempString3;
 }
 
+/*
+ * Check equality of 2 arrays. Returns YES / NO
+ */
+
 +   (BOOL) userNumber:(NSMutableArray *) userArray 
 isEqualToRandomNumber:(NSMutableArray *) randomArray {
     if ([userArray isEqual:randomArray]) {
@@ -43,6 +51,10 @@ isEqualToRandomNumber:(NSMutableArray *) randomArray {
         return NO;
     }
 }
+
+/*
+ * The method for calculating the "cows".
+ */
 
 + (int) cowsCounter:(NSMutableArray *) userArray 
            inArrays:(NSMutableArray *) randomArray {
@@ -55,6 +67,10 @@ isEqualToRandomNumber:(NSMutableArray *) randomArray {
     return cowsCounter;
 }
 
+/*
+ * The method for calculating the "bulls".
+ */
+
 + (int) bullsCounter:(NSMutableArray *) userArray 
             inArrays:(NSMutableArray *) randomArray {
     int bullsCounter = 0;
@@ -65,6 +81,10 @@ isEqualToRandomNumber:(NSMutableArray *) randomArray {
     }
     return bullsCounter;
 }
+
+/*
+ * Creation of a random array of 4 numbers are not repeated
+ */
 
 + (NSMutableArray *) randomNumberGenerate {
     NSMutableArray *randomArray = [[NSMutableArray alloc]init ];
@@ -84,6 +104,10 @@ isEqualToRandomNumber:(NSMutableArray *) randomArray {
     return randomArray;
 }
 
+/*
+ * The method for Remove all object from statistic table array
+ */
+
 - (void)removeAllObjectFromStatisticTable {
     [self.tableArray removeAllObjects];
 }
@@ -91,6 +115,10 @@ isEqualToRandomNumber:(NSMutableArray *) randomArray {
 - (id)objectInListAtIndex:(unsigned)theIndex {
     return [self.tableArray objectAtIndex:theIndex];
 }
+
+/*
+ * The method for add object from statistic table array
+ */
 
 - (void) addDataToTableArray:(NSString *) data {
     if ([self.tableArray count] == 0) {

@@ -146,32 +146,7 @@
     // e.g. self.myOutlet = nil;
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-}
 
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-	[super viewWillDisappear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-	[super viewDidDisappear:animated];
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
-return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-
-}
    // Setting allowable values ​​text edit field 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     
@@ -198,6 +173,12 @@ return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
     return NO;
 }
 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    // Return YES for supported orientations
+return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+
+}
+
 - (BOOL)textFieldShouldReturn:(UITextField *)theTextField {
     [theTextField resignFirstResponder];
     return YES;
@@ -222,7 +203,6 @@ return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
     }
-    
     // Set up the cell... 
     
     cell.font = [UIFont systemFontOfSize:19];
@@ -230,6 +210,26 @@ return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
     cell.text = itemText;
     
     return cell;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+	[super viewWillDisappear:animated];
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+	[super viewDidDisappear:animated];
 }
 
 - (void)dealloc {
