@@ -207,11 +207,13 @@ return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
 // Customize the number of rows in the table view.
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return _countOfAttempt;
 }
 
 // Customize the appearance of table view cells.
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     static NSString *CellIdentifier = @"Cell";
@@ -222,9 +224,11 @@ return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
     }
     
     // Set up the cell... 
+    
     cell.font = [UIFont systemFontOfSize:19];
     NSString* itemText = [self.dataController objectInListAtIndex:indexPath.row];
     cell.text = itemText;
+    
     return cell;
 }
 
