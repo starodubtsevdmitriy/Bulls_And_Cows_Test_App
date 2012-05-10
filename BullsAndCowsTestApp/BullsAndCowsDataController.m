@@ -117,7 +117,7 @@ isEqualToRandomNumber:(NSMutableArray *) randomArray {
 }
 
 /*
- * The method for add object from statistic table array
+ * The method for adds object to statistic table array
  */
 
 - (void) addDataToTableArray:(NSString *) data {
